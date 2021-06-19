@@ -13,7 +13,9 @@ class ProductTableViewCell: UITableViewCell {
     @IBOutlet weak var nameProduct: UILabel!
     @IBOutlet weak var priceWithoutDicount: UILabel!
     @IBOutlet weak var priceWithDiscount: UILabel!
-
+    @IBOutlet weak var colorStack: UIStackView!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

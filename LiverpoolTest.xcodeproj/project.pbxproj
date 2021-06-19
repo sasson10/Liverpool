@@ -19,6 +19,7 @@
 		A40E2C27267E690C000F987F /* GetProductsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40E2C26267E690C000F987F /* GetProductsResponse.swift */; };
 		A40E2C2E267E69F7000F987F /* GetProductsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40E2C2D267E69F7000F987F /* GetProductsRequest.swift */; };
 		A40E2C31267E6A6F000F987F /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = A40E2C30267E6A6F000F987F /* Config.plist */; };
+		A40E2C34267E8A49000F987F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40E2C33267E8A49000F987F /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		A40E2C26267E690C000F987F /* GetProductsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductsResponse.swift; sourceTree = "<group>"; };
 		A40E2C2D267E69F7000F987F /* GetProductsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductsRequest.swift; sourceTree = "<group>"; };
 		A40E2C30267E6A6F000F987F /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		A40E2C33267E8A49000F987F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				A40E2C1A267E6345000F987F /* Producto.swift */,
+				A40E2C33267E8A49000F987F /* Color.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				A40E2C11267E5D62000F987F /* ProductosViewController.swift in Sources */,
 				A40E2BFD267E5CC8000F987F /* SceneDelegate.swift in Sources */,
 				A40E2C24267E686C000F987F /* LiverpoolAPI.swift in Sources */,
+				A40E2C34267E8A49000F987F /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
