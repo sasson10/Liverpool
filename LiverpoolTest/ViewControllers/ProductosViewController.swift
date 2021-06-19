@@ -10,19 +10,21 @@ import UIKit
 class ProductosViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     var products : [Producto] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.getProducts()
+        self.getProducts(product: "estufa")
         
     }
     
-    func getProducts(){
+    
+    func getProducts(product : String){
         self.showSpinner(onView: self.view)
-        LiverpoolAPI.getProducts(product: "estufa") { (result) in
+        LiverpoolAPI.getProducts(product: product) { (result) in
             switch result {
                 case .success(let response):
                     self.removeSpinner()
@@ -100,4 +102,19 @@ extension UIViewController {
         }
     }
     
+}
+
+extension ProductosViewController : UISearchResultsUpdating, UISearchBarDelegate{
+    func updateSearchResults(for searchController: UISearchController) {
+
+    }
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print("producto a buscar: \(searchText)")
+    }
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        print("searchText \(searchBar.text!)")
+        if let produtToSearch = searchBar.text{
+            self.getProducts(product: produtToSearch)
+        }
+    }
 }

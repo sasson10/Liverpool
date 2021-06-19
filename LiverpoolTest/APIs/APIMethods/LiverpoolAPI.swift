@@ -13,7 +13,7 @@ struct LiverpoolAPI {
         product : String,
         completionHandler : @escaping(Result<GetProductsResponse,APIError>)->Void)
     {
-        GetProductsRequest.createRequest(product: "estufa") { (jsonData) in
+        GetProductsRequest.createRequest(product: product) { (jsonData) in
             let decoder = JSONDecoder()
             do{
                 let json = try decoder.decode(GetProductsResponse.self, from: jsonData)
